@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 29</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="currency">
+      <div class="currency-select-block">
+        <select id="currencySelect" class="currency-select">
+          <option value="no">Select currency</option>
+        </select>
+        <select id="currencyType" class="currency-select">
+          <option value="currency-rub">currency->rub</option>
+          <option value="rub-currency">rub->currency</option>
+        </select>
+      </div>
+      <!-- /.currency-select-block -->
+      <form id="formCurrencyRUR" action="submit" class="currency-form">
+        <legend>
+          <p>
+            <input id="currencyFirstValue" type="text" class="currency-value" />
+            <label
+              for="currencyFirstValue"
+              id="currencyFirst"
+              class="currency-label"
+              >USD</label
+            >
+          </p>
+          <p>
+            <input
+              id="currencySecondValue"
+              type="text"
+              class="currency-value"
+              readonly
+            />
+            <label
+              for="currencySecondValue"
+              id="currencySecond"
+              class="currency-label"
+              >RUR</label
+            >
+          </p>
+          <p>
+            <input
+              id="currencyRate"
+              type="text"
+              class="currency-value"
+              readonly
+            />
+            <label
+              for="currencyRate"
+              id="currencyRateLabel"
+              class="currency-label"
+              >Rate</label
+            >
+          </p>
+          <p><button id="convertCurrency" type="button">Convert</button></p>
+        </legend>
+      </form>
+      <a href="https://www.ecb.europa.eu/" class="currency-legend"
+        >By https://www.ecb.europa.eu/</a
+      >
+    </div>
+    <!-- /.currency -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
